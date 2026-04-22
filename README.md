@@ -1,5 +1,9 @@
 # chiron-common-core-standards
 
+[![PyPI](https://img.shields.io/pypi/v/chiron-common-core-standards.svg)](https://pypi.org/project/chiron-common-core-standards/)
+[![Python](https://img.shields.io/pypi/pyversions/chiron-common-core-standards.svg)](https://pypi.org/project/chiron-common-core-standards/)
+[![License](https://img.shields.io/pypi/l/chiron-common-core-standards.svg)](https://github.com/JovannyEspinal/chiron-common-core-standards/blob/main/LICENSE)
+
 An MCP (Model Context Protocol) server that exposes US Common Core ELA standards (grades 2–4) as lookup tools for LLM agents.
 
 > Package name on PyPI: `chiron-common-core-standards`. Python import name: `chiron_standards`.

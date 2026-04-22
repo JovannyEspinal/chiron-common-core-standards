@@ -1,6 +1,8 @@
-# chiron-standards
+# chiron-common-core-standards
 
 An MCP (Model Context Protocol) server that exposes US Common Core ELA standards (grades 2–4) as lookup tools for LLM agents.
+
+> Package name on PyPI: `chiron-common-core-standards`. Python import name: `chiron_standards`.
 
 Backed by a bundled SQLite database with full-text and semantic search — no network calls at runtime, no external rate limits.
 
@@ -21,7 +23,7 @@ When an LLM generates educational content — worksheets, assessments, lesson pl
 ## Install
 
 ```bash
-pip install chiron-standards
+pip install chiron-common-core-standards
 ```
 
 ## Use with Claude Desktop
@@ -98,8 +100,8 @@ Each standard returns a dict with:
 The published wheel already contains `standards.db`. To rebuild it (e.g. to pull fresh upstream data):
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/chiron-standards
-cd chiron-standards
+git clone https://github.com/JovannyEspinal/chiron-common-core-standards
+cd chiron-common-core-standards
 uv sync
 cp .env.example .env   # add CSP_API_KEY and OPENAI_API_KEY
 uv run python -m chiron_standards.ingest

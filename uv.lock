@@ -279,7 +279,7 @@ wheels = [
 ]
 
 [[package]]
-name = "chiron-standards"
+name = "chiron-common-core-standards"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

@@ -1,5 +1,5 @@
 [project]
-name = "chiron-standards"
+name = "chiron-common-core-standards"
 version = "0.1.0"
 description = "MCP server exposing US Common Core ELA standards (grades 2-4) as lookup tools for LLM agents."
 readme = "README.md"
@@ -31,9 +31,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/espinaljovanny/chiron-standards"
-Repository = "https://github.com/espinaljovanny/chiron-standards"
-Issues = "https://github.com/espinaljovanny/chiron-standards/issues"
+Homepage = "https://github.com/JovannyEspinal/chiron-common-core-standards"
+Repository = "https://github.com/JovannyEspinal/chiron-common-core-standards"
+Issues = "https://github.com/JovannyEspinal/chiron-common-core-standards/issues"
 
 [project.scripts]
 chiron-standards = "chiron_standards.server:main"

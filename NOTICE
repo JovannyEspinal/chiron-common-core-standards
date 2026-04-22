@@ -1,0 +1,36 @@
+chiron-standards
+Copyright 2026 Jovanny Espinal
+
+This product includes software developed by Jovanny Espinal, licensed
+under the Apache License, Version 2.0.
+
+--------------------------------------------------------------------------------
+Third-party data attribution
+--------------------------------------------------------------------------------
+
+The standards data bundled with this package (in `src/chiron_standards/data/`)
+is derived from the Common Standards Project:
+
+    https://commonstandardsproject.com
+
+which in turn sources standards from the Achievement Standards Network (ASN)
+operated by Desire2Learn:
+
+    http://asn.desire2learn.com/
+
+ASN publishes standards under the Creative Commons Attribution 3.0 United
+States license (CC BY 3.0 US):
+
+    http://creativecommons.org/licenses/by/3.0/us/
+
+Rights holder: Desire2Learn Incorporated.
+
+--------------------------------------------------------------------------------
+Common Core State Standards
+--------------------------------------------------------------------------------
+
+The Common Core State Standards are © 2010 National Governors Association
+Center for Best Practices and Council of Chief State School Officers. All
+rights reserved.
+
+    http://www.corestandards.org/public-license/

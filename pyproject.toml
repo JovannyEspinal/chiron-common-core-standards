@@ -1,0 +1,60 @@
+[project]
+name = "chiron-standards"
+version = "0.1.0"
+description = "MCP server exposing US Common Core ELA standards (grades 2-4) as lookup tools for LLM agents."
+readme = "README.md"
+authors = [
+    { name = "Jovanny Espinal", email = "espinaljovanny@icloud.com" }
+]
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+keywords = ["mcp", "model-context-protocol", "education", "common-core", "standards", "llm", "fastmcp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "fastmcp>=3.2.4",
+    "numpy>=2.4.4",
+    "openai>=2.32.0",
+    "python-dotenv>=1.2.2",
+    "requests>=2.33.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/espinaljovanny/chiron-standards"
+Repository = "https://github.com/espinaljovanny/chiron-standards"
+Issues = "https://github.com/espinaljovanny/chiron-standards/issues"
+
+[project.scripts]
+chiron-standards = "chiron_standards.server:main"
+
+[build-system]
+requires = ["uv_build>=0.10.8,<0.11.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+# Ship the prebuilt SQLite database inside the wheel
+module-name = "chiron_standards"
+module-root = "src"
+source-include = ["src/chiron_standards/data/standards.db"]
+wheel-include = ["src/chiron_standards/data/standards.db"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "ruff>=0.15.11",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
